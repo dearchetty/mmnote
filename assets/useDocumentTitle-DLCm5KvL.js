@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DF2fYuay.js";import{m as t}from"./vendor-dnd-BHbMByww.js";var n=e(t(),1);function r(e){(0,n.useEffect)(()=>{document.title=e?`마모노트 :: ${e}`:`마모노트`},[e])}export{r as t};

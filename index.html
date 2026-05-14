@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // GitHub Pages SPA redirect handler
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(
+            null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/mmnote/favicon.svg" sizes="any" />
+    <link rel="apple-touch-icon" href="/mmnote/favicon.svg" />
+    <link rel="mask-icon" href="/mmnote/favicon.svg" color="#FF6B00" />
+    <meta name="apple-mobile-web-app-title" content="MMNOTE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마모노트</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/mmnote/assets/index-DqPc4L0Q.js"></script>
+    <link rel="modulepreload" crossorigin href="/mmnote/assets/rolldown-runtime-DF2fYuay.js">
+    <link rel="modulepreload" crossorigin href="/mmnote/assets/vendor-dnd-BHbMByww.js">
+    <link rel="modulepreload" crossorigin href="/mmnote/assets/vendor-radix-BECHUgup.js">
+    <link rel="modulepreload" crossorigin href="/mmnote/assets/vendor-react-eM09q6NZ.js">
+    <link rel="modulepreload" crossorigin href="/mmnote/assets/vendor-firebase-MPS-CQ3W.js">
+    <link rel="modulepreload" crossorigin href="/mmnote/assets/vendor-ui-CeeGNwT_.js">
+    <link rel="modulepreload" crossorigin href="/mmnote/assets/firebase-DhE3CDja.js">
+    <link rel="modulepreload" crossorigin href="/mmnote/assets/characterService-CCMLiHRv.js">
+    <link rel="modulepreload" crossorigin href="/mmnote/assets/userService-D8vEjCJ8.js">
+    <link rel="stylesheet" crossorigin href="/mmnote/assets/index-CCtCo6vU.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
